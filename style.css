@@ -9,3 +9,19 @@
      cursor: pointer;
      
 }
+
+.maps{
+    border-radius: 20px;
+}
+
+.h4 {
+    color: rgb(136, 12, 12);
+ }
+
+
+ footer {
+     text-align: center;
+     padding: 3px;
+     background-color: rgb(240, 220, 176);
+     color: black;
+   }
