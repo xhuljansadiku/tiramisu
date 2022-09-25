@@ -35,6 +35,13 @@ background-image: url(https://images.moneycontrol.com/static-mcnews/2021/11/tira
 width: 900px;
 }
 
+.quote {
+    background-color: bisque;
+    color: black;
+    width: 700px;
+    padding: 5px 10px;
+}
+
 #dergo{
     background-color: green;
     border: none;
