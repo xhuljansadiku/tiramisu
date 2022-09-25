@@ -4,6 +4,7 @@ body{
 
 #h1-top {
     color: green;
+    
    }
 
 
@@ -29,6 +30,10 @@ body{
      
 }
 
+.logo {
+    text-decoration: none;
+}
+
 .order {
 border: 2px dotted red;
 background-image: url(https://images.moneycontrol.com/static-mcnews/2021/11/tiramisu.jpg);
@@ -40,6 +45,11 @@ width: 900px;
     color: black;
     width: 700px;
     padding: 5px 10px;
+}
+
+#logo {
+    text-decoration: none;
+    background-color: aqua;
 }
 
 #dergo{
@@ -85,6 +95,7 @@ width: 900px;
 
 .hr {
     border: 1px solid red;
+
    }
 
 .maps{
