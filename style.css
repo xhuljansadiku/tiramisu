@@ -29,6 +29,34 @@ body{
      
 }
 
+.order {
+border: 2px dotted red;
+background-image: url(https://images.moneycontrol.com/static-mcnews/2021/11/tiramisu.jpg);
+width: 1200px;
+}
+
+#dergo{
+    background-color: green;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25% 10%;
+
+}
+
+#reset{
+    background-color: red;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 25% 10%;
+}
 
 #img-top {
     border-radius: 20px;
@@ -57,6 +85,7 @@ body{
 }
 
 .footer {
+    float: right;
     padding: 3px;
     background-color: white;
     color: black;
