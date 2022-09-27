@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,177 +9,181 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
 
+    
     <title>Tiramisu Recipe | Sally's Baking Addiction</title>
 </head>
+
 <body>
 
 
-    <table width="900" align="center">
-        <tr>
-        <td>
+<table width="900" align="center">
+    <tr>
+    <td>
+
+<!--H1 & Logo -->
+    <div class="header">
+    <table width="100%">
+    <tr>
+    <td>
+        <a class="logo" href="/index.html">
+            <h1 class="h1-header-text">
+        <img id="logo" src="https://previews.123rf.com/images/asiln/asiln1709/asiln170900049/86301849-tiramisu-rubber-stamp.jpg" width="100px">
+        Tiramisu &#128151;
+        </h1>
+        </a>
+        </td>
+
+<!--Order Button-->
+    <td align="right" id="order" >
+        <!--
+        <a href="https://amazon.com">Buy on Amazon!</a>-->
+        <br>
+        <br>
+        <button class="button"> <a href="index.html">Main Page</a> </button>
+        </td>
+        </tr>
+</table>
+</div>
 
 
-        <header>
-                <table width="100%">
-                <tr>
-                <td>
+<div class="quote">
+    <h1 >"Life is a tiramisu, some pieces better than others" 😊 🍰</h1>
+</div>
 
+<!--Form-->
+<div id="form">
+<form method="get">
 
-                <a class="logo" href="/index.html">
-                    <h1 id="h1-top">
-                    <img id="logo" src="https://previews.123rf.com/images/asiln/asiln1709/asiln170900049/86301849-tiramisu-rubber-stamp.jpg" width="100px">
-                    Tiramisu &#128151;
-                    </h1>
-                </a>
+<fieldset class="order-form">
+    <legend>
+    <h1>Order Tiramisu & more..</h1>
+    </legend>
+    <p>
+    <b>Select the tiramisu size?</b>
+    </p>
 
-                </td>
-        </header>
+    <input type="radio" id="small" name="size" value="Small">
+    <label for="size">Small</label> 
+    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?" >
+    
+    <br>
+    <br>
 
+    <input type="radio" id="medium" name="size" value="Medium" checked>
+    <label for="size">Medium</label>
+    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?" >
+    
+    <br>
+    <br>
+    <input type="radio" id="large" name="size" value="Large">
+    <label for="size">Large</label>
+    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
+    
+    <br>
+    <br>
 
+    <select name="drinks" id="drinks-select">
+    <option value="">--Please choose your drinks--</option>
+            <optgroup label="Coca Cola">Coca Cola
+            <option value="cocacolaoriginal">Coca Cola Original</option>
+            <option value="Coca Cola 0">Coca Cola 0 Sugar</option>
+            <option value="cocacolalight">Coca Cola Light</option>
+    </optgroup>
 
-        <nav>
-                <td align="right" id="order" >
-                    <!--
-                    <a href="https://amazon.com">Buy on Amazon!</a>-->
-                    <br>
-                    <br>
-                    <button class="button"> <a href="index.html">Main Page</a> </button>
-                    </td>
-                    </tr>
-        </nav>
-                </table>
-               
+    <optgroup label="Fanta">
+            <option value="fantaoriginal">Fanta Original</option>
+            <option value="fanta0">Fanta 0 Sugar</option>
+            <option value="mezomix">MezoMix</option>
+    </optgroup>
 
-                <h1 class="quote">"Life is a tiramisu, some pieces better than others" 😊 🍰</h1>
+    <optgroup label="Natural Water">  
+            <option value="N-Water0,5L">Water 0,5L</option>
+            <option value="N-Water0,75L">Water 0,75L</option>
+            <option value="N-Water1L">Water 1L</option>
+    </optgroup>
 
-            <section id="form">
-                  <!--Form-->
-                <form method="get">
-                    <fieldset class="order">
-                        <legend><h1>Order Tiramisu & more..</h1></legend>
+    <optgroup label="Sparkling Water">
+            <option value="S-Water0,5L">Water 0,5L</option>
+            <option value="S-Water0,75L">Water 0,75L</option>
+            <option value="S-Water1L">Water 1L</option>
+    </optgroup>
 
-                    
+    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
+    <!--Nuk di se si sasine ta shoh dhe tek Method Get ps ne Google at Network (mendoj qe duhe JS)  -->
+    
+    </select>
 
-                    <p><b>Select the tiramisu size?</b></p>
+    <br>
+    <br>
+
+    <select name="drinks" id="drinks-select">
+        <option value="">--More drinks--</option>
+                        
+    <optgroup label="Coca Cola">Coca Cola
+        <option value="cocacolaoriginal">Coca Cola Original</option>
+        <option value="Coca Cola 0">Coca Cola 0 Sugar</option>
+        <option value="cocacolalight">Coca Cola Light</option>
+    </optgroup>
+
+    <optgroup label="Fanta">
+            <option value="fantaoriginal">Fanta Original</option>
+            <option value="fanta0">Fanta 0 Sugar</option>
+            <option value="mezomix">MezoMix</option>
+    </optgroup>
+
+    <optgroup label="Natural Water">  
+            <option value="N-Water0,5L">Water 0,5L</option>
+            <option value="N-Water0,75L">Water 0,75L</option>
+            <option value="N-Water1L">Water 1L</option>
+    </optgroup>
+
+    <optgroup label="Sparkling Water">
+            <option value="S-Water0,5L">Water 0,5L</option>
+            <option value="S-Water0,75L">Water 0,75L</option>
+            <option value="S-Water1L">Water 1L</option>
+    </optgroup>
+    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
+    <!--Nuk di se si sasine ta shoh dhe tek Method Get ps ne Google at Network (mendoj qe duhe JS)  -->
         
-                    <input type="radio" id="small" name="size" value="Small">
-                    <label for="size">Small</label> 
-                    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?" >
-                    <br>
-                    <br>
+    </select>
 
+    <br>
+    <br>
 
-                    <input type="radio" id="medium" name="size" value="Medium" checked>
-                    <label for="size">Medium</label>
-                    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?" >
-                    <br>
-                    <br>
-                    
-                    <input type="radio" id="large" name="size" value="Large">
-                    <label for="size">Large</label>
-                    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
-                    <br>
-                    <br>
+    <strong>Name  : <input type="text" name="name" placeholder=""  minlength="2" maxlength="20" required> </strong> 
+    <br>
+    <strong>Phone: <input type="tel" name="tel" placeholder="" minlength="8" maxlength="15" required> </strong>
+    <br>
+    <textarea id="message" name="message" rows="10" cols="28" placeholder="Message.." maxlength="120"></textarea>
+    <br>
 
+    <input id="dergo" type="submit" value="Dergo">
+    <input id="reset" type="reset" value="Reset">
 
-                    <select name="drinks" id="drinks-select">
-                        <option value="">--Please choose your drinks--</option>
-                        
-                        
-                    <optgroup label="Coca Cola">Coca Cola
-                             <option value="cocacolaoriginal">Coca Cola Original</option>
-                             <option value="Coca Cola 0">Coca Cola 0 Sugar</option>
-                             <option value="cocacolalight">Coca Cola Light</option>
-                    </optgroup>
-
-                        <optgroup label="Fanta">
-                            <option value="fantaoriginal">Fanta Original</option>
-                            <option value="fanta0">Fanta 0 Sugar</option>
-                            <option value="mezomix">MezoMix</option>
-                        </optgroup>
-
-                    <optgroup label="Natural Water">  
-                            <option value="N-Water0,5L">Water 0,5L</option>
-                            <option value="N-Water0,75L">Water 0,75L</option>
-                            <option value="N-Water1L">Water 1L</option>
-                    </optgroup>
-
-                    <optgroup label="Sparkling Water">
-                            <option value="S-Water0,5L">Water 0,5L</option>
-                            <option value="S-Water0,75L">Water 0,75L</option>
-                            <option value="S-Water1L">Water 1L</option>
-                    </optgroup>
-                    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
-                    <!--Nuk di se si sasine ta shoh dhe tek Method Get ps ne Google at Network (mendoj qe duhe JS)  -->
-
-
-                    </select>
-                    <br>
-                    <br>
-
-                    <select name="drinks" id="drinks-select">
-                        <option value="">--More drinks--</option>
-                        
-                        
-                    <optgroup label="Coca Cola">Coca Cola
-                             <option value="cocacolaoriginal">Coca Cola Original</option>
-                             <option value="Coca Cola 0">Coca Cola 0 Sugar</option>
-                             <option value="cocacolalight">Coca Cola Light</option>
-                    </optgroup>
-
-                        <optgroup label="Fanta">
-                            <option value="fantaoriginal">Fanta Original</option>
-                            <option value="fanta0">Fanta 0 Sugar</option>
-                            <option value="mezomix">MezoMix</option>
-                        </optgroup>
-
-                    <optgroup label="Natural Water">  
-                            <option value="N-Water0,5L">Water 0,5L</option>
-                            <option value="N-Water0,75L">Water 0,75L</option>
-                            <option value="N-Water1L">Water 1L</option>
-                    </optgroup>
-
-                    <optgroup label="Sparkling Water">
-                            <option value="S-Water0,5L">Water 0,5L</option>
-                            <option value="S-Water0,75L">Water 0,75L</option>
-                            <option value="S-Water1L">Water 1L</option>
-                    </optgroup>
-                    <input type="number" value="pieces" min="0" maxlength="10" placeholder="How many pieces?">
-                    <!--Nuk di se si sasine ta shoh dhe tek Method Get ps ne Google at Network (mendoj qe duhe JS)  -->
-                     </select>
-
-                    <br>
-                    <br>
-
-                    <strong>Name  : <input type="text" name="name" placeholder=""  minlength="2" maxlength="20" required> </strong> 
-                    <br>
-                    <strong>Phone: <input type="tel" name="tel" placeholder="" minlength="8" maxlength="15" required> </strong>
-                    <br>
-                    <textarea id="message" name="message" rows="10" cols="28" placeholder="Message.." maxlength="120"></textarea>
-                    <br>
-                    <input id="dergo" type="submit" value="Dergo">
-                    <input id="reset" type="reset" value="Reset">
-                </fieldset>
-        </section>
+    </fieldset>
+</div>
 
 
 
 <footer class="footer">
     <picture>
-    <a href="#top"><img src="https://previews.123rf.com/images/asiln/asiln1709/asiln170900049/86301849-tiramisu-rubber-stamp.jpg" width="200px"></a> 
-  
-     <p> &copy; Copyright 2022, Xhuljan Sadiku  </p>
-
-</picture>
+        <a href="#top">
+        <img src="https://previews.123rf.com/images/asiln/asiln1709/asiln170900049/86301849-tiramisu-rubber-stamp.jpg" width="200px">
+        </a> 
+        <p> 
+        &copy; Copyright 2022, Xhuljan Sadiku  
+        </p>
+    </picture>
 </footer>
 
+</form>
 
-                </form>
-            </td>
-        </tr>
-    </table>
+</td>
+</tr>
+</table>
+
 </body>
 </html>
