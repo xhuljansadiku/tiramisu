@@ -1,21 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Patrick+Hand+SC&display=swap');
 *{
-    font-family: 'Patrick Hand SC', cursive;   
+    font-family: 'Patrick Hand SC', cursive;
 }
 
-/*  Header  */
-.h1-header-text  {
-    color: green; 
+.container{
+    width: 900px;
+    margin: auto;
+}
+/*Header and Button*/
+ 
+.logo{
+    width: 150px;
 }
 
-.logo {
-    text-decoration: none;
-    font-size: 25px;
+h1, h2{
+    font-family: 'Germania One', cursive;
     
+    color: rgb(40, 98, 40);
 }
 
+.posted {
+text-align: left;
+width: 400px; 
+}
+
+.posted a{
+    text-decoration: none;
+}
 
 .button{
-
+    margin-left: 26rem;
+    margin-bottom: 4rem;
     background-color: bisque;
     border: 1px dashed tomato;
     border-radius: 80px;
@@ -23,41 +38,44 @@
     font-size: 24px;
     width: 80px;
     padding: 5px 5px;
+}
+.button a{
+    text-decoration: none;
     cursor: pointer;
-    text-decoration: none;
-    
 }
 
-a:link {
+.button-2{
+    margin-left: 42rem;
+    background-color: bisque;
+    border: 1px dashed tomato;
+    border-radius: 80px;
+    text-align: center;
+    font-size: 24px;
+    width: 80px;
+    padding: 5px 5px;
+}
+
+.button-2 a{
     text-decoration: none;
+    cursor: pointer;
 }
 
 
-.img-top{
+/*Top Images*/
+.top-img{
+    width: 290px;
     border-radius: 20px;
-    margin: 5px 5px 5px 5px;
 }
-
-
-
-/*  Section 1  */
-
-.sec-tir {
-    font-size: 26px;
-}
-
-
-.section-1{
-    font-size: 18px;
-}
+/*Section 1*/
 
 .img-middle {
     border-radius: 10% 30% 50% 70%;
 }
 
-
 /*  Section 2  */
-.tutorials{
+
+
+.section-02{
     margin: 10px 0px;
     padding: 5px 2px;
 
@@ -70,10 +88,15 @@ a:link {
 
 
 /*  Order page , First Quote  */
+
+.logo{
+    width: 150px;
+}
+
 .quote {
     background-color: bisque;
     color: black;
-    width: 720px;
+    width: 800px;;
 }
 
 /*  Order page , Order Form  */
@@ -107,22 +130,29 @@ width: 900px;
 }
 
 
-/*  Extra   */
 
+/*Extra*/
 .hr {
-    border: 1px solid red;
+    border: 1px dashed red;
 
 }
 
 .footer {
     font-size: 20px;
-    float: right;
     padding: 3px;
     background-color: white;
     color: black;
 }
 
+.logo-bottom{
+    width: 150px;
+}
 
+
+/*Child Selector*/
+p > em {
+    background-color: yellowgreen;
+}
 
 ul > li {
     background-color: rgb(241, 241, 241);
@@ -140,6 +170,43 @@ strong > input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer > p{
+    background-color: rgb(40, 98, 40);
+    color: white;
+    width: 300px;
+    padding-left: 10px;
+}
+
+
+/*Adjacent Sibling Selector*/
+h2 + ul {
+    background-color: rgb(141, 169, 155);
+    
+}
+
+/*General Sibling Selector*/
+
+h2 ~ p {
+    background-color: rgb(241, 241, 241);
+    padding: 5px 5px;
+    
+}
+
+
+/*Existence  element[attribute]*/
+div[class] {
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+/*Equality  element[attribute="value"]*/
+div [class="section-01"]{
+font-weight: 500;
+}
+
+
+
+
 textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -151,21 +218,5 @@ h2::first-letter {
 }
 
 
+
  
-h2 + ul {
-    background-color: rgb(141, 169, 155);
-    
-}
-
-
-div[class] {
-   background-color: rgba(255, 255, 255, 0.8);
-}
-
-
-
-
-
-
-
-
