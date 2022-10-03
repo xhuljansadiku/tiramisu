@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Germania+One&family=Macondo&family=Patrick+Hand+SC&family=Rubik+Dirt&display=swap');
+
+:root {
+    --h1-h2color: rgb(11, 29, 11);
+}
+
 *{
     font-family: 'Patrick Hand SC', cursive;
 }
@@ -51,8 +56,9 @@ ul > li a:hover{
 
 h1, h2{
     font-family: 'Germania One', cursive;
-    color: rgb(11, 29, 11);
     letter-spacing: 5px;
+    color: var(--h1-h2color);
+    
 }
 
 .posted {
@@ -267,8 +273,7 @@ li:last-child{
 .footer {
     font-size: 20px;
     padding: 3px;
-    background-color: white;
-    color: black;
+    color: white;
 }
 
 .logo-bottom{
@@ -302,6 +307,7 @@ footer > p{
     color: white;
     width: 300px;
     padding-left: 10px;
+   
 }
 
 
