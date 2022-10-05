@@ -80,6 +80,7 @@ width: 400px;
     font-size: 24px;
     width: 80px;
     padding: 5px 5px;
+    transition-delay: 2s;
 }
 .button a{
     text-decoration: none;
