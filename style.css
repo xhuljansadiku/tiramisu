@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Germania+One&family=Macondo&family=Patrick+Hand+SC&family=Rubik+Dirt&display=swap');
 
+
+ 
+
+
+
 :root {
     --h1-h2color: rgb(11, 29, 11);
 }
@@ -43,6 +48,7 @@ ul > li a:hover{
 /*Header and Button*/
 .logo{
     width: 150px;
+    
 }
 
 .h1-header-text{
@@ -80,7 +86,6 @@ width: 400px;
     font-size: 24px;
     width: 80px;
     padding: 5px 5px;
-    transition-delay: 2s;
 }
 .button a{
     text-decoration: none;
@@ -109,6 +114,7 @@ width: 400px;
 .top-img{
     width: 290px;
     border-radius: 20px;
+    clear: both;
 }
 
 li{
@@ -337,5 +343,45 @@ div[class] {
 div [class="section-01"]{
 font-weight: 500;
 }
+
+
+
+
+/*  Animation */
+
+@keyframes animate {
+    from {
+        left: -110px;
+        border-radius: 0px;
+    }
+    to {
+        left: 590px;
+        border-radius: 50%;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        right: -110px;
+        border-radius: 0px;
+    }
+    to {
+        right: 590px;
+        border-radius: 50%;
+    }
+}
+
+.an1 {
+  position: absolute;
+  top: 20px;
+  animation: animate  3s ease-in-out infinite;
+    
+}
+.an2 {
+    position: absolute;
+    top: 20px;
+    animation: animate2  3s ease-in-out infinite;
+      
+  }
 
 
