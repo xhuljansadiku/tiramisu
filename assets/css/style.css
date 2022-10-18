@@ -62,8 +62,9 @@
 }
 
 .h1-header-text{
+    padding: 5px 5px;
     font-family: 'Macondo', cursive;
-    font-size: 33px;
+    font-size: 28px;
     color: rgb(24, 117, 24);
     letter-spacing: 10px;
     font-weight: bold;
@@ -282,7 +283,8 @@ h2::first-letter {
 }
 
 li:not(:hover) {
-background-color: antiquewhite;
+    background-color: rgb(104, 201, 134);
+    color: black;
 }
 
 li:first-child{
