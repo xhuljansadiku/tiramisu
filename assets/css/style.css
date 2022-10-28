@@ -598,10 +598,10 @@ font-size: 16px;
     margin-left: 42rem;
     background-color: bisque;
     border: 1px dashed tomato;
-    border-radius: 80px;
+    border-radius: 0px;
     text-align: center;
     font-size: 24px;
-    width: 80px;
+    width: 20px;
     padding: 5px 5px;
 }
 
@@ -698,18 +698,18 @@ font-size: 16px;
 /*  Order page , First Quote  */
 
 .logo{
-    width: 100px;
-    margin-bottom: 10px;
+     display: none;
 }
 
 
 .quote {
-    width: 300px;
+    width: 340px;
     background-color: bisque;
     color: black;
-    font-size: 14px;
+    font-size: 10px;
+    padding-left: 70px;
     text-shadow: 5px 10px 3px rgba(0, 0, 0, 0.48);
-
+ 
 }
 
 /*  Order page , Order Form  */
